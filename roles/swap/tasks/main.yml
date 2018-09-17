@@ -41,8 +41,8 @@
 - name: Wait for server to restart successfully
   local_action: wait_for
     host="{{ target }}"
-    port=22
-    delay=1
+    port=2022
+    delay=2
     timeout=30
 
 - name: Get last two reboots
